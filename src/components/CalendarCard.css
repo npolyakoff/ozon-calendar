@@ -1,0 +1,11 @@
+@value colors: "../assets/variables.css";
+@value secondary from colors;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.weekDays {
+    color: secondary;
+}

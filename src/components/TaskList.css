@@ -1,0 +1,11 @@
+.taskList {
+    padding: 0;
+}
+.taskList__item {
+    list-style: none;
+    margin-bottom: 1.4rem;
+    color: primary;
+}
+.taskList__input {
+    margin-left: 3.6rem;
+}

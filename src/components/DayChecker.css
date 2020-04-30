@@ -1,0 +1,28 @@
+@value colors: "../assets/variables.css";
+@value primary, accent, snow from colors;
+
+.checker {
+    color: primary;
+    font-weight: 500;
+}
+.checker_active {
+    color: accent;
+}
+.checker > input {
+    display: none;
+}
+.checker > label {
+    display: block;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checker > input:checked ~ label {
+    background: linear-gradient(0deg, #7ED5FC 0%, #90D9FA 100%);
+    color: snow;
+}
+

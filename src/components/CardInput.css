@@ -1,0 +1,12 @@
+@value colors: "../assets/variables.css";
+@value placeholder, border-color, radius-sm from colors;
+
+.cardInput {
+    border: 1px solid border-color;
+    border-radius: radius-sm;
+    padding: 0.7rem 0 0.7rem 1.4rem;
+}
+
+.cardInput::placeholder {
+    color: placeholder;
+}

@@ -1,0 +1,31 @@
+@value colors: "../assets/variables.css";
+@value list from colors;
+
+.taskItem {
+    color: list;
+}
+.taskItem > input {
+    display: none;
+}
+.taskItem > input:checked ~ label {
+    text-decoration: line-through;
+}
+.taskItem > input:checked ~ label::before {
+    background: linear-gradient(0deg, #7ED5FC 0%, #90D9FA 100%);;
+}
+.taskItem > label {
+    position: relative;
+    padding-left: 3.6rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+.taskItem > label::before {
+    position: absolute;
+    bottom: 0; left: 0;
+    content: '';
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #F2F3F3;
+    border-radius: 0.4rem;
+}

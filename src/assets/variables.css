@@ -1,0 +1,12 @@
+@value primary: #7C86A2;
+@value accent: #AA3434;
+@value heading: #6B7897;
+@value heading-secondary: #8C96AB; 
+@value secondary: rgba(52, 72, 94, 0.536062);
+@value snow: #FFFFFF;
+@value list: #A2ABBF;
+@value placeholder: #BFC4CC;
+@value border-color: #D8DCE6;
+
+@value radius: 0.6rem;
+@value radius-sm: 0.4rem;
