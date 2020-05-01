@@ -1,5 +1,10 @@
 # my-project
 
+## GH Pages
+```
+https://npolyakoff.github.io/ozon-calendar/
+```
+
 ## Project setup
 ```
 npm install
