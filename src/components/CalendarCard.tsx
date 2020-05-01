@@ -29,16 +29,16 @@ export default class CalendarCard extends VueComponent {
         return day == 0 ? 7 : day;
     }
 
-    get skippedDays(): any[] {
-        let skipped: any[] = [];
+    get skippedDays(): JSX.Element[] {
+        let skipped: JSX.Element[] = [];
         for (let i = 1; i < this.firstDayOfWeek; i++) {
             skipped.push(<div></div>)
         }
         return skipped;
     }
     
-    get monthDays(): any[] {
-        let days = [];
+    get monthDays(): JSX.Element[] {
+        let days: JSX.Element[] = [];
         for (let i = 1; i <= this.$store.getters.numberOfDays; i++) {
             days.push(<DayChecker 
                         value={this.day} 

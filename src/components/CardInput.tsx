@@ -7,7 +7,7 @@ import styles from './CardInput.css?module'
 @Component
 export default class CardInput extends VueComponent {
     text: string = '';
-    onInputChange(e: any) {
+    onInputChange(e: KeyboardEvent) {
         if (e.key == "Enter" && this.text.length > 0) {
             this.$emit('change', this.text);
             this.text = '';
